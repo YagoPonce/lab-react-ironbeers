@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import NavBar from "../components/Navbar"
 
 function BeerDetails() {
     const { id } = useParams()
@@ -33,13 +34,14 @@ return (
     
     
     <div> 
+    <NavBar />
         <img src={oneBeerDetails[0].image_url} atl={oneBeerDetails.name}/>
-        <h3>{oneBeerDetails[0].name}</h3>
+        <h1>{oneBeerDetails[0].name}</h1>
         <h3>{oneBeerDetails[0].tagline}</h3>
         <h3>{oneBeerDetails[0].first_brewed}</h3>
         <h3>{oneBeerDetails[0].attenuation_level}</h3>
-        <h3>{oneBeerDetails[0].description}</h3>
-        <h3>{oneBeerDetails[0].contributed_by}</h3>
+        <h2>{oneBeerDetails[0].description}</h2>
+        <h4>{oneBeerDetails[0].contributed_by}</h4>
     </div>
             )   
 

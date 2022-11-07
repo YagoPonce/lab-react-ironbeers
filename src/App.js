@@ -7,12 +7,12 @@ import Error from './pages/Error';
 import NotFound from './pages/NotFound';
 import RandomBeer from './pages/RandomBeer';
 import NewBeer from './pages/NewBeer';
-import axios from 'axios';
 
 function App() {
 
   return (
     <div className="App">
+
    <Routes>
 
       <Route path="/" element={<Home />} />

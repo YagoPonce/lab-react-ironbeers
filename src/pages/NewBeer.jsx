@@ -1,5 +1,6 @@
 import axios from "axios"
 import { useState } from "react"
+import NavBar from "../components/Navbar"
 
 function NewBeer() {
 
@@ -42,6 +43,7 @@ function NewBeer() {
 
   return (
     <div>
+    <NavBar />
     <form>
         <label htmlFor="name">Name: </label>
         <input value={nameInput}  type="text" name="name" onChange={handleNameChange}/>

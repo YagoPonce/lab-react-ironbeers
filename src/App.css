@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  gap: 10vw;
+  background-color: #089add;
+  position: fixed;
+  top:0;
+}
+
+img {
+  height: 300px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 20px 
+}
+.cards img {
+  padding-right: 30px
+}
+
+* {
+  text-decoration: none;
+  color: black
+}
+
+h2 {
+  color: black;
+
+}
+h3 {
+  color: darkgrey;
+}

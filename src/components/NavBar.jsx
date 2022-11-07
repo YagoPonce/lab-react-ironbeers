@@ -1,12 +1,21 @@
 import { Link } from "react-router-dom"
 
 function NavBar() {
+
+
+
+
+
   return (
-    <div>
+    <header>
+
         <Link to="/">
-            <img src="../assets/pngwing.com (6).png" alt="Home"/>
+        
+            <img src="../assets/pngwing.com (6).png" alt="Home" />
+
         </Link>
-    </div>
+
+    </header>
   )
 }
 

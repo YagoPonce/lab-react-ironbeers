@@ -1,5 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
+import NavBar from "../components/Navbar"
 
 
 function RandomBeer() {
@@ -31,6 +32,7 @@ function RandomBeer() {
 
   return (
     <div>
+    <NavBar />
     {console.log("response", beerRandom)}
     <img src={beerRandom.image_url} atl={beerRandom.name}/>
         <h3>{beerRandom.name}</h3>
